@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deps/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="deps/css/my_css.css">
+    <!-- Стиль footer-a для главной страницы -->
+    <link rel="stylesheet" href="deps/css/my_footer_css.css">
+    <!-- Favicons for different platforms -->
+    <link rel="apple-touch-icon" sizes="180x180" href="deps/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="deps/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="deps/favicon/favicon-16x16.png">
+    <link rel="manifest" href="deps/favicon/site.webmanifest">
+    <title>Запчасти для сельхозтехники, строительной техники и траторов</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Информация
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item  text-white" href="#">Доставка и оплата</a></li>
+                                <li><a class="dropdown-item  text-white" href="#">Контактная информация</a></li>
+                                <li><a class="dropdown-item  text-white" href="about.html">Про нас</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="carts/cart.html">Корзина</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="users/login.html">Войти</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Мой профиль
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
+                                <li><a class="dropdown-item  text-white" href="users/profile.html">Личный кабинет</a>
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="#">Админ панель</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="#">Выйти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            
+			
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель - ООО "Агротехника"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --green-primary: #28a745;
+            --green-secondary: #c3e6cb;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        .navbar {
+            background-color: var(--green-primary);
+        }
+        .navbar-brand {
+            color: white;
+        }
+        .table-responsive {
+            overflow-x: auto; /* Горизонтальная прокрутка для таблицы, если она слишком широкая */
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: var(--green-secondary);
+        }
+        .table-hover tbody tr:hover {
+            background-color: #d4edda;
+        }
+        /* Добавим стили для кнопок */
+        .btn-primary {
+            background-color: var(--green-primary);
+            border-color: var(--green-primary);
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ООО "Агротехника"</a>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <h2>Заказы</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Стоимость</th>
+                        <th>Артикул</th>
+                        <th>Количество</th>
+                        <th>Оплачен</th>
+                        <th>ФИО покупателя</th>
+                        <th>Имя пользователя</th>
+                        <th>Email</th>
+                        <th>Адрес доставки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ГИДРОЦИЛИНДР ДЛЯ КРЫЛЬЕВ КПМ-12</td>
+                        <td>900 000</td>
+                        <td>МС 80/40х630-3.11</td>
+                        <td>1</td>
+                        <td>Да</td>
+                        <td>Иванов Иван Иванович</td>
+                        <td>ivanov_i</td>
+                        <td>ivanov@example.com</td>
+                        <td>ул. Ленина, 1, г. Москва</td>
+                    </tr>
+                    <tr>
+                        <td>КРОНШТЕЙН ДЛЯ КРЕПЛЕНИЯ ЛАПЫ РЫХЛИТЕЛЬНОЙ</td>
+                        <td>36000</td>
+                        <td>КПМ-120 00.150</td>
+                        <td>2</td>
+                        <td>Нет</td>
+                        <td>Петров Петр Петрович</td>
+                        <td>petrov_p</td>
+                        <td>petrov@example.com</td>
+                        <td>ул. Пушкина, 2, г. Санкт-Петербург</td>
+                     </tr>
+                     <!-- Другие заказы -->
+                </tbody>
+            </table>
+        </div>
+
+
+        <h2 class="mt-5">Детали</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Артикул</th>
+                        <th>Стоимость</th>
+                        <th>Количество на складе</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Диск центрального колеса КПМ-10, КПМ-12</td>
+                        <td>11х16</td>
+                        <td>1530</td>
+                        <td>10</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ГИДРОЦИЛИНДР ДЛЯ КРЫЛЬЕВ КПМ-12</td>
+                        <td>ПКУ-0,8 / СНУ-550 / КУН-10 </td>
+                        <td>9 000</td>
+                        <td>20</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+					<td>ГИДРОЦИЛИНДР ДЛЯ ПОДЪЕМА КРЫЛЬЕВ КПМ-6, КПМ-8</td>
+                        <td>Подкрылки КПМ-10, 12, 16, 20 </td>
+                        <td>28 800</td>
+                        <td>15</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <td>ВТУЛКА КПМ-16</td>
+                        <td>02230</td>
+                        <td>6 210</td>
+                        <td>6</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr><td>КРОНШТЕЙН ДЛЯ КРЕПЛЕНИЯ ЛАПЫ РЫХЛИТЕЛЬНОЙ</td>
+                        <td>КПМ-120 00.150 </td>
+                        <td>36 000</td>
+                        <td>15</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr><td>ПОДПРУЖИННИК СТОЙКИ КУЛЬТИВАТОРА КПМ</td>
+                        <td>ПКПМ 00.453-01</td>
+                        <td>3 150</td>
+                        <td>15</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr><td>ЗАЖИМ КПМ</td>
+                        <td>КП 05.001 (КПМ)</td>
+                        <td>6 300</td>
+                        <td>4</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr><td>КОРПУС ВЫСЕВАЮЩЕГО АППАРАТА (КОРОБОЧКА)</td>
+                        <td>Н108.01.010</td>
+                        <td>7 515</td>
+                        <td>12</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+					</tr><td>НАРАЛЬНИК ЗАГОРТАЧА СЕЯЛКИ</td>
+                        <td>СЗГ 00.149</td>
+                        <td>1 800</td>
+                        <td>15</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+					</tr><td>ВИНТ А.М6Х10 ГОСТ 8878 (DIN 914)</td>
+                        <td>01V061</td>
+                        <td> 900</td>
+                        <td>1</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+					</tr><td>СТУПИЦА КОПИРУЮЩЕГО КОЛЕСА В СБОРЕ</td>
+                        <td>КПМ-16 32.040</td>
+                        <td>20 700</td>
+                        <td>15</td>
+                         <td>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
